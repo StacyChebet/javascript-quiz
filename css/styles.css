@@ -6,3 +6,11 @@
 .question {
   color: darkturquoise;
 }
+.details {
+text-align: center;
+}
+.button {
+color: darkturquoise;
+text-align: center;
+background-color: black;
+}
