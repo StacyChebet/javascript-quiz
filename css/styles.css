@@ -1,16 +1,19 @@
 .panel {
-  background-image: url("../images/bg2.jpg");
+  background-image: url("../images/bg3.jpg");
   background-size: cover;
-  color: mistyrose;
+  color: silver;
 }
 .question {
-  color: darkturquoise;
+  color:lightpink;
 }
 .details {
 text-align: center;
 }
 .button {
-color: darkturquoise;
+color: lightpink;
 text-align: center;
 background-color: black;
+}
+.well {
+  background-color: pink;
 }
