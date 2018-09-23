@@ -9,14 +9,6 @@
 .details {
 text-align: center;
 }
-.button {
-color: lightpink;
-text-align: center;
-background-color: black;
-}
-.well {
-  background-color: pink;
-}
-body {
-  font-size: 24px;
+#result {
+  visibility: hidden;
 }
