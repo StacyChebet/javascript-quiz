@@ -18,6 +18,12 @@ function check () {
   } else {
     score =0;
   };
+  if (qn3=="true") {
+    score= 10;
+  } else {
+    score =0;
+  };
+  
 
 
 
