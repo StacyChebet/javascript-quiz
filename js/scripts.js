@@ -8,27 +8,27 @@ function check () {
 
   var score= 10;
 
-  if (qn1=="true") {
+  if (num1=="true") {
     score= 10;
   } else {
     score =0;
   };
-  if (qn2=="true") {
+  if (num2=="true") {
     score= 10;
   } else {
     score =0;
   };
-  if (qn3=="true") {
+  if (num3=="true") {
     score= 10;
   } else {
     score =0;
   };
-  if (qn4=="true") {
+  if (num4=="true") {
     score= 10;
   } else {
     score =0;
   };
-    if (qn5=="true") {
+    if (num5=="true") {
     score= 10;
   } else {
     score =0;
