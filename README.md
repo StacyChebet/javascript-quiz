@@ -1,4 +1,4 @@
-#JavaScript Quiz
+#JAVASCRIPT QUIZ
 #### The JavaScript Quiz is a web page that contains five questions which have multiple choices that the user is supposed to choose the right answer from, according to them, 21/9/2018
 #### By **STACY CHEBET**
 ## Description
