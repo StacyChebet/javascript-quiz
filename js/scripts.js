@@ -14,25 +14,32 @@ function check () {
     score =0;
   };
   if (num2=="true") {
-    score= 10;
+    score= score + 10;
   } else {
-    score =0;
+    score = score + 0;
   };
   if (num3=="true") {
-    score= 10;
+    score= score + 10;
   } else {
-    score =0;
+    score = score + 0;
   };
   if (num4=="true") {
-    score= 10;
+    score= score + 10;
   } else {
-    score =0;
+    score = score + 0;
   };
     if (num5=="true") {
-    score= 10;
+    score= score + 10;
   } else {
-    score =0;
+    score = score + 0;
   };
+
+
+//Beginning of User Interface:
+  document.getElementById("result").styles.visibility="visible";
+  document.getElementById("announcement").innerHTML="You have scored" + score + "points";
+};
+
 
 
 
