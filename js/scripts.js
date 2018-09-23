@@ -13,6 +13,12 @@ function check () {
   } else {
     score =0;
   };
+  if (qn2=="true") {
+    score= 10;
+  } else {
+    score =0;
+  };
+
 
 
 
