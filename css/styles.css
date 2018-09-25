@@ -23,3 +23,6 @@ body {
 #result {
   visibility: hidden;
 }
+#announcement {
+  font-weight: bolder;
+}
