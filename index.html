@@ -5,7 +5,6 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
   </head>
   <body>
     <div class="container">
@@ -13,17 +12,18 @@
       <div class="details">
         <P class="bg-secondary">FILL IN THESE DETAILS BEFORE YOU BEGIN:</p>
           <p class="bg-danger">Your Name:</p>
-            <input type="text"></input>
+            <input type="text" placeholder="Enter both names" required></input>
             <br/>
             <br/>
           <P class="bg-danger">Your class:</p>
-            <input type="text"></input>
+            <input type="text" required></input>
             <br/>
             <br/>
           <p class="bg-danger">Your admission number:</p>
-            <input type="text"></input>
+            <input type="text" required></input>
             <br/>
             <br/>
+
       </div>
       <h1 class="heading">YOU THINK YOU KNOW, BUT DO YOU?</h1>
       <h2 class="title">TAKE THIS TEST TO FIND OUT!</h2>
@@ -38,46 +38,61 @@
     </div>
     <div class="panel">
       <h3 class="beginning">FOR EACH OF THE QUESTIONS BELOW, PROVIDE ONE ANSWER</h3>
-      <form id="js-quiz">
+      <form id="jsquiz" name="jsquiz">
+        <fieldset id="questionNo1">
         <p class="question" id="qn1">1. What is JavaScript?</p>
-          <input type="radio" id="num1" value="true">An object-oriented computer programming language commonly used to create interactive effects within web browsers.</input><br/>
-          <input type="radio" id="num1" value="false">A language that provides the structure of the page</input><br/>
-          <input type="radio" id="num1" value="false">A language that provides the visual and aural style of a web page</input>
+          <input type="radio" class="num1" name="question1" value="true">An object-oriented computer programming language commonly used to create interactive effects within web browsers.</input><br/>
+          <input type="radio" class="num1" name="question1" value="false">A language that provides the structure of the page</input><br/>
+          <input type="radio" class="num1" name="question1" value="false">A language that provides the visual and aural style of a web page</input>
           <br/>
           <br/>
+        </fieldset>
+
+        <fieldset id="questionNo2">
         <p class="question" id="qn2">2. What is jQuery?</p>
-          <input type="radio" name="num2" value="true">A library for JavaScript used to make the web page more interactive</input><br/>
-          <input type="radio" name="num2" value="false">Pre-defined styles that make it easier to style a web page</input><br/>
-          <input type="radio" name="num2" value="false">A dynamic, interpreted, reflective, object-oriented, general-purpose programming language</input>
+          <input type="radio" class="num2" name="question2" value="true">A library for JavaScript used to make the web page more interactive</input><br/>
+          <input type="radio" class="num2" name="question2" value="false">Pre-defined styles that make it easier to style a web page</input><br/>
+          <input type="radio" class="num2" name="question2" value="false">A dynamic, interpreted, reflective, object-oriented, general-purpose programming language</input>
           <br/>
           <br/>
+        </fieldset>
+
+        <fieldset id="questionNo3">
         <p class="question" id="qn3">3. Which one of the following is not a data type?</p>
-          <input type="radio" name="num3" value="false">Boolean</input><br/>
-          <input type="radio" name="num3" value="false">String</input><br/>
-          <input type="radio" name="num3" value="false">Undefined</input><br/>
-          <input type="radio" name="num3" value="true">Integer</input>
+        <input type="radio" name="question3" class="num3" value="true">Integer</input><br>
+          <input type="radio" class="num3" name="question3" value="false">Boolean</input><br/>
+          <input type="radio" class="num3" name="question3" value="false">String</input><br/>
+          <input type="radio" class="num3" name="question3" value="false">Undefined</input><br/>
           <br/>
           <br/>
+        </fieldset>
+        <fieldset id="questionNo4">
+
         <p class="question" id="qn4">4. Which one is the odd one out?</p>
-          <input type="radio" name="num4" value="false">.toUppercase()</input><br/>
-          <input type="radio" name="num4" value="false">.slice()</input><br/>
-          <input type="radio" name="num4" value="false">.concat()</input><br/>
-          <input type="radio" name="num4" value="true">.toFixed()</input>
+        <input type="radio" class="num4" name="question4" value="true">.toFixed()</input><br>
+          <input type="radio" class="num4" name="question4" value="false">.toUppercase()</input><br/>
+          <input type="radio" class="num4" name="question4" value="false">.slice()</input><br/>
+          <input type="radio" class="num4" name="question4" value="false">.concat()</input><br/>
           <br/>
           <br/>
+        </fieldset>
+        <fieldset id="questionNo5">
+
         <p class="question" id="qn5">5. Which one of these is not a function?</p>
-          <input type="radio" name="num5" value="false">Alert()</input><br/>
-          <input type="radio" name="num5" value="false">Confirm()</input><br/>
-          <input type="radio" name="num5" value="false">Prompt()</input><br/>
-          <input type="radio" name="num5" value="true">.toExponential()</input>
+        <input type="radio" class="num5" name="question5" value="true">.toExponential()</input><br>
+          <input type="radio" class="num5" name="question5" value="false">Alert()</input><br/>
+          <input type="radio" class="num5" name="question5" value="false">Confirm()</input><br/>
+          <input type="radio" class="num5" name="question5" value="false">Prompt()</input><br/>
           <br/>
           <br/>
-        <input type="button" value="Submit" class="button" onclick("quiz")/>
-      </div>
+        </fieldset>
+
+        <input id="submit" type="submit" class="button"/>
       </div>
     </form>
-    <div id="result">
-      <p id="announcement">You have scored:</p>
+    <div id="result" style="color:black !important;">
+      <p id="announcement"></p>
     </div>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
